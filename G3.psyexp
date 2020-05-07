@@ -1,0 +1,1020 @@
+﻿<?xml version="1.0" ?>
+<PsychoPy2experiment encoding="utf-8" version="2020.1.1">
+  <Settings>
+    <Param name="Audio latency priority" updates="None" val="use prefs" valType="str"/>
+    <Param name="Audio lib" updates="None" val="use prefs" valType="str"/>
+    <Param name="Completed URL" updates="None" val="" valType="str"/>
+    <Param name="Data filename" updates="None" val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code"/>
+    <Param name="Enable Escape" updates="None" val="True" valType="bool"/>
+    <Param name="Experiment info" updates="None" val="{'participant': '', 'session': '001'}" valType="code"/>
+    <Param name="Force stereo" updates="None" val="True" valType="bool"/>
+    <Param name="Full-screen window" updates="None" val="True" valType="bool"/>
+    <Param name="HTML path" updates="None" val="html" valType="str"/>
+    <Param name="Incomplete URL" updates="None" val="" valType="str"/>
+    <Param name="Monitor" updates="None" val="testMonitor" valType="str"/>
+    <Param name="Save csv file" updates="None" val="False" valType="bool"/>
+    <Param name="Save excel file" updates="None" val="False" valType="bool"/>
+    <Param name="Save log file" updates="None" val="True" valType="bool"/>
+    <Param name="Save psydat file" updates="None" val="True" valType="bool"/>
+    <Param name="Save wide csv file" updates="None" val="True" valType="bool"/>
+    <Param name="Screen" updates="None" val="1" valType="num"/>
+    <Param name="Show info dlg" updates="None" val="True" valType="bool"/>
+    <Param name="Show mouse" updates="None" val="False" valType="bool"/>
+    <Param name="Units" updates="None" val="height" valType="str"/>
+    <Param name="Use version" updates="None" val="" valType="str"/>
+    <Param name="Window size (pixels)" updates="None" val="[1536, 864]" valType="code"/>
+    <Param name="blendMode" updates="None" val="avg" valType="str"/>
+    <Param name="color" updates="None" val="$[0,0,0]" valType="str"/>
+    <Param name="colorSpace" updates="None" val="rgb" valType="str"/>
+    <Param name="expName" updates="None" val="try1" valType="str"/>
+    <Param name="exportHTML" updates="None" val="on Sync" valType="str"/>
+    <Param name="logging level" updates="None" val="exp" valType="code"/>
+  </Settings>
+  <Routines>
+    <Routine name="trial"/>
+    <Routine name="Instructions">
+      <TextComponent name="Instructions_Text">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.045" valType="code"/>
+        <Param name="name" updates="None" val="Instructions_Text" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="Experiment: Influence of emotional information in biasing performance&amp;#10;&amp;#10;Task: Go and Nogo Tasks&amp;#10;&amp;#10;Instructions:&amp;#10;1.Press Space Bar when Target stimuli appears&amp;#10;2.Do not press a key when Non-Target stimuli appears&amp;#10;&amp;#10;3.There will be three runs in the experiment&amp;#10;&amp;#10;Press Space Bar to continue" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="Instructions_Key_Next">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="Instructions_Key_Next" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="nothing" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="Run1">
+      <ImageComponent name="face1">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="$Image_Name" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="face1" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="(2,1.125)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="0.5" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </ImageComponent>
+      <KeyboardComponent name="run_time_key">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="$Correct_Answer" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="run_time_key" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="0.5" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="True" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="False" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="Wait1">
+      <ImageComponent name="ISI">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="plus.png" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="ISI" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="(0.25, 0.25)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="2.0" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </ImageComponent>
+    </Routine>
+    <Routine name="Instructions_AR1">
+      <TextComponent name="IR1">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.045" valType="code"/>
+        <Param name="name" updates="None" val="IR1" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="This is the first actual run.&amp;#10;60 images will be shown for 500 milli second and the &amp;#10;inter-stimulus time will be 2000 milli second&amp;#10;&amp;#10;Targets: Happy and Angry facial expressions&amp;#10;Non-Targets: Neutral facial expressions&amp;#10;&amp;#10;Press Space Bar for target using your dominant&amp;#10;hand's thumb.&amp;#10;Respond as fast as possible without making mistakes&amp;#10;&amp;#10;Press space bar to continue" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_4">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_4" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="Instructions_TR1">
+      <TextComponent name="ITR1">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.03" valType="code"/>
+        <Param name="name" updates="None" val="ITR1" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="This is the first practise run.&amp;#10;8 images will be shown for 500 milli second and the &amp;#10;inter-stimulus time will be 2000 milli second&amp;#10;&amp;#10;Targets: Happy and Angry facial expressions&amp;#10;Non-Targets: Neutral facial expressions&amp;#10;&amp;#10;Press Space Bar for target using your dominant&amp;#10;hand's thumb.&amp;#10;Respond as fast as possible without making mistakes&amp;#10;&amp;#10;Press space bar to continue&amp;#10;" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_3">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_3" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="TR1_Image">
+      <ImageComponent name="Image_TR1">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="$Image_Name" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="Image_TR1" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="(1.25, 0.75)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="0.5" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </ImageComponent>
+      <KeyboardComponent name="Key_TR1">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="Key_TR1" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="0.5" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="TR1_W">
+      <ImageComponent name="Wait_TR1">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="plus.png" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="Wait_TR1" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="(0.5, 0.5)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="2.0" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </ImageComponent>
+    </Routine>
+    <Routine name="Instructions_TR2">
+      <TextComponent name="ITR2">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.03" valType="code"/>
+        <Param name="name" updates="None" val="ITR2" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="This is the first practise run.&amp;#10;8 images will be shown for 500 milli second and the &amp;#10;inter-stimulus time will be 2000 milli second&amp;#10;&amp;#10;Targets: Angry and Neutral facial expressions&amp;#10;Non-Targets: Happy facial expressions&amp;#10;&amp;#10;Press Space Bar for target using your dominant&amp;#10;hand's thumb.&amp;#10;Respond as fast as possible without making mistakes&amp;#10;&amp;#10;Press space bar to continue&amp;#10;" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_5">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_5" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="AR1_Image">
+      <ImageComponent name="Image_AR1">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="$Image_Name" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="Image_AR1" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="(1.25, 0.75)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="0.5" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </ImageComponent>
+      <KeyboardComponent name="Key_AR1">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="Key_AR1" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="0.5" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="AR1_W">
+      <ImageComponent name="Wait_AR1">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="plus.png" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="Wait_AR1" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="(0.5, 0.5)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="2.0" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </ImageComponent>
+    </Routine>
+    <Routine name="TR2_Image">
+      <ImageComponent name="Image_TR2">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="$Image_Name" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="Image_TR2" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="(1.25, 0.75)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="0.5" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </ImageComponent>
+      <KeyboardComponent name="Key_TR2">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="Key_TR2" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="0.5" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="TR2_W">
+      <ImageComponent name="Wait_TR2">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="plus.png" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="Wait_TR2" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="(0.5, 0.5)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="2.0" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </ImageComponent>
+    </Routine>
+    <Routine name="Instructions_AR2">
+      <TextComponent name="IRA2">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.03" valType="code"/>
+        <Param name="name" updates="None" val="IRA2" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="This is the first actual run.&amp;#10;60 images will be shown for 500 milli second and the &amp;#10;inter-stimulus time will be 2000 milli second&amp;#10;&amp;#10;Targets: Angry and Neutral facial expressions&amp;#10;Non-Targets: Happy facial expressions&amp;#10;&amp;#10;Press Space Bar for target using your dominant&amp;#10;hand's thumb.&amp;#10;Respond as fast as possible without making mistakes&amp;#10;&amp;#10;Press space bar to continue" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_7">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_7" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="AR2_Image">
+      <ImageComponent name="Image_AR2">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="$Image_Name" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="Image_AR2" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="(1.25, 0.75)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="0.5" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </ImageComponent>
+      <KeyboardComponent name="Key_AR2">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="Key_AR2" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="0.5" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="Instructions_TR3">
+      <TextComponent name="ITR3">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.03" valType="code"/>
+        <Param name="name" updates="None" val="ITR3" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="This is the first practise run.&amp;#10;8 images will be shown for 500 milli second and the &amp;#10;inter-stimulus time will be 2000 milli second&amp;#10;&amp;#10;Targets: Happy and Neutral facial expressions&amp;#10;Non-Targets: Angry facial expressions&amp;#10;&amp;#10;Press Space Bar for target using your dominant&amp;#10;hand's thumb.&amp;#10;Respond as fast as possible without making mistakes&amp;#10;&amp;#10;Press space bar to continue&amp;#10;" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="TR3_Image">
+      <ImageComponent name="Image_TR3">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="$Image_Name" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="Image_TR3" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="(1.25, 0.75)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="0.5" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </ImageComponent>
+      <KeyboardComponent name="Key_TR3">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="Key_TR3" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="0.5" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="TR3_W">
+      <ImageComponent name="Wait_TR3">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="plus.png" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="Wait_TR3" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="(0.5, 0.5)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="2.0" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </ImageComponent>
+    </Routine>
+    <Routine name="Instructions_AR3">
+      <TextComponent name="IAR3">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.03" valType="code"/>
+        <Param name="name" updates="None" val="IAR3" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="This is the first practise run.&amp;#10;60 images will be shown for 500 milli second and the &amp;#10;inter-stimulus time will be 2000 milli second&amp;#10;&amp;#10;Targets: Happy and Neutral facial expressions&amp;#10;Non-Targets: Angry facial expressions&amp;#10;&amp;#10;Press Space Bar for target using your dominant&amp;#10;hand's thumb.&amp;#10;Respond as fast as possible without making mistakes&amp;#10;&amp;#10;Press space bar to continue&amp;#10;" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_2">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_2" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="AR3_Image">
+      <ImageComponent name="Image_AR3">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="$Image_Name" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="Image_AR3" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="(1.25, 0.75)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="0.5" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </ImageComponent>
+      <KeyboardComponent name="Key_AR3">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="Key_AR3" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="0.5" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="AR2_W">
+      <ImageComponent name="Wait_AR2">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="plus.png" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="Wait_AR2" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="(0.5, 0.5)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="2.0" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </ImageComponent>
+    </Routine>
+    <Routine name="AR3_W">
+      <ImageComponent name="Wait_AR3">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="plus.png" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="Wait_AR3" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="(0.5, 0.5)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="2.0" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </ImageComponent>
+    </Routine>
+    <Routine name="End_Instructions">
+      <TextComponent name="EI">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.4" valType="code"/>
+        <Param name="name" updates="None" val="EI" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="5" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="End of the experiment&amp;#10;" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <Routine name="Instructions"/>
+    <LoopInitiator loopType="StairHandler" name="trials_7">
+      <Param name="N down" updates="None" val="2" valType="code"/>
+      <Param name="N reversals" updates="None" val="" valType="code"/>
+      <Param name="N up" updates="None" val="1" valType="code"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="staircase" valType="str"/>
+      <Param name="max value" updates="None" val="1" valType="code"/>
+      <Param name="min value" updates="None" val="0" valType="code"/>
+      <Param name="nReps" updates="None" val="2" valType="code"/>
+      <Param name="name" updates="None" val="trials_7" valType="code"/>
+      <Param name="start value" updates="None" val="0.5" valType="code"/>
+      <Param name="step sizes" updates="None" val="[0.8,0.8,0.4,0.4,0.2]" valType="code"/>
+      <Param name="step type" updates="None" val="log" valType="str"/>
+    </LoopInitiator>
+    <LoopInitiator loopType="TrialHandler" name="trials_8">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="None" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="trials_8" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="Instructions_TR1"/>
+    <LoopInitiator loopType="TrialHandler" name="trials">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('Image_Name', '101.jpg'), ('Emotion', 'happy'), ('Correct_Answer', None)]), OrderedDict([('Image_Name', '80.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', None)]), OrderedDict([('Image_Name', '2.jpg'), ('Emotion', 'angry'), ('Correct_Answer', None)]), OrderedDict([('Image_Name', '180.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', None)]), OrderedDict([('Image_Name', '151.jpg'), ('Emotion', 'happy'), ('Correct_Answer', None)]), OrderedDict([('Image_Name', '150.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', None)]), OrderedDict([('Image_Name', '90.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', None)]), OrderedDict([('Image_Name', '91.jpg'), ('Emotion', 'happy'), ('Correct_Answer', None)]), OrderedDict([('Image_Name', '2.jpg'), ('Emotion', 'angry'), ('Correct_Answer', None)])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="Trial1.xlsx" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="trials" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="TR1_Image"/>
+    <Routine name="TR1_W"/>
+    <LoopTerminator name="trials"/>
+    <Routine name="Instructions_AR1"/>
+    <LoopInitiator loopType="TrialHandler" name="trials_2">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('Image_Name', '101.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '80.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', 'neutral')]), OrderedDict([('Image_Name', '2.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '180.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', 'neutral')]), OrderedDict([('Image_Name', '151.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '150.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', 'neutral')]), OrderedDict([('Image_Name', '90.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', 'neutral')]), OrderedDict([('Image_Name', '91.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '2.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '2.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '120.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', 'neutral')]), OrderedDict([('Image_Name', '.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '71.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '51.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '31.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '2.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '161.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '50.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', 'neutral')]), OrderedDict([('Image_Name', '2.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '210.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', 'neutral')]), OrderedDict([('Image_Name', '2.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '221.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '81.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '2.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '100.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', 'neutral')]), OrderedDict([('Image_Name', '11.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '40.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', 'neutral')]), OrderedDict([('Image_Name', '150.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', 'neutral')]), OrderedDict([('Image_Name', '.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '211.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '41.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '220.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', 'neutral')]), OrderedDict([('Image_Name', '120.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', 'neutral')]), OrderedDict([('Image_Name', '190.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', 'neutral')]), OrderedDict([('Image_Name', '100.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', 'neutral')]), OrderedDict([('Image_Name', '2.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '70.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', 'neutral')]), OrderedDict([('Image_Name', '231.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '2.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '20.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', 'neutral')]), OrderedDict([('Image_Name', '180.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', 'neutral')]), OrderedDict([('Image_Name', '201.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '2.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '2.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '21.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '2.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '2.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '2.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '181.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '2.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '2.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '121.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '2.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '230.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', 'neutral')]), OrderedDict([('Image_Name', '2.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '191.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="Actual1.xlsx" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="trials_2" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="AR1_Image"/>
+    <Routine name="AR1_W"/>
+    <LoopTerminator name="trials_2"/>
+    <LoopTerminator name="trials_8"/>
+    <LoopInitiator loopType="TrialHandler" name="trials_9">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="None" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="trials_9" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="Instructions_TR2"/>
+    <LoopInitiator loopType="TrialHandler" name="trials_3">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('Image_Name', '150.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', None)]), OrderedDict([('Image_Name', '572.jpg'), ('Emotion', 'angry'), ('Correct_Answer', None)]), OrderedDict([('Image_Name', '90.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', None)]), OrderedDict([('Image_Name', '190.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', None)]), OrderedDict([('Image_Name', '12.jpg'), ('Emotion', 'angry'), ('Correct_Answer', None)]), OrderedDict([('Image_Name', '582.jpg'), ('Emotion', 'angry'), ('Correct_Answer', None)]), OrderedDict([('Image_Name', '462.jpg'), ('Emotion', 'angry'), ('Correct_Answer', None)]), OrderedDict([('Image_Name', '220.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', None)]), OrderedDict([('Image_Name', '211.jpg'), ('Emotion', 'happy'), ('Correct_Answer', None)])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="Trial2.xlsx" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="trials_3" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="TR2_Image"/>
+    <Routine name="TR2_W"/>
+    <LoopTerminator name="trials_3"/>
+    <Routine name="Instructions_AR2"/>
+    <LoopInitiator loopType="TrialHandler" name="trials_4">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('Image_Name', '150.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', 'neutral')]), OrderedDict([('Image_Name', '572.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '90.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', 'neutral')]), OrderedDict([('Image_Name', '190.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', 'neutral')]), OrderedDict([('Image_Name', '12.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '582.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '462.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '220.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', 'neutral')]), OrderedDict([('Image_Name', '211.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '151.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '70.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', 'neutral')]), OrderedDict([('Image_Name', '21.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '161.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '232.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '31.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '252.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '51.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '302.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '230.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', 'neutral')]), OrderedDict([('Image_Name', '92.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '191.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '201.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '52.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '11.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '242.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '81.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '312.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '202.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '462.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '712.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '181.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '362.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '42.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '302.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '121.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '22.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '120.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', 'neutral')]), OrderedDict([('Image_Name', '41.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '50.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', 'neutral')]), OrderedDict([('Image_Name', '252.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '20.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', 'neutral')]), OrderedDict([('Image_Name', '312.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '231.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '152.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '71.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '282.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '212.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '212.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '210.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', 'neutral')]), OrderedDict([('Image_Name', '82.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '82.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '100.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', 'neutral')]), OrderedDict([('Image_Name', '40.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', 'neutral')]), OrderedDict([('Image_Name', '221.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '101.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '80.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', 'neutral')]), OrderedDict([('Image_Name', '372.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '322.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '91.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '180.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', 'neutral')])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="Actual2.xlsx" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="trials_4" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="AR2_Image"/>
+    <Routine name="AR2_W"/>
+    <LoopTerminator name="trials_4"/>
+    <LoopTerminator name="trials_9"/>
+    <LoopInitiator loopType="TrialHandler" name="trials_10">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="None" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="trials_10" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="Instructions_TR3"/>
+    <LoopInitiator loopType="TrialHandler" name="trials_5">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('Image_Name', '92.jpg'), ('Emotion', 'angry'), ('Correct_Answer', None)]), OrderedDict([('Image_Name', '161.jpg'), ('Emotion', 'happy'), ('Correct_Answer', None)]), OrderedDict([('Image_Name', '191.jpg'), ('Emotion', 'happy'), ('Correct_Answer', None)]), OrderedDict([('Image_Name', '120.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', None)]), OrderedDict([('Image_Name', '12.jpg'), ('Emotion', 'angry'), ('Correct_Answer', None)]), OrderedDict([('Image_Name', '152.jpg'), ('Emotion', 'angry'), ('Correct_Answer', None)]), OrderedDict([('Image_Name', '100.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', None)]), OrderedDict([('Image_Name', '582.jpg'), ('Emotion', 'angry'), ('Correct_Answer', None)]), OrderedDict([('Image_Name', '101.jpg'), ('Emotion', 'happy'), ('Correct_Answer', None)])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="Trial3.xlsx" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="trials_5" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="TR3_Image"/>
+    <Routine name="TR3_W"/>
+    <LoopTerminator name="trials_5"/>
+    <Routine name="Instructions_AR3"/>
+    <LoopInitiator loopType="TrialHandler" name="trials_6">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('Image_Name', '92.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '161.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '191.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '120.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', 'neutral')]), OrderedDict([('Image_Name', '12.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '152.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '100.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', 'neutral')]), OrderedDict([('Image_Name', '582.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '101.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '11.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '31.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '202.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '150.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', 'neutral')]), OrderedDict([('Image_Name', '191.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '252.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '101.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '242.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '31.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '11.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '121.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '70.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', 'neutral')]), OrderedDict([('Image_Name', '52.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '71.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '221.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '40.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', 'neutral')]), OrderedDict([('Image_Name', '572.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '232.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '151.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '201.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '161.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '221.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '51.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '22.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '82.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '71.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '51.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '230.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', 'neutral')]), OrderedDict([('Image_Name', '81.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '21.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '211.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '180.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', 'neutral')]), OrderedDict([('Image_Name', '90.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', 'neutral')]), OrderedDict([('Image_Name', '231.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '91.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '220.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', 'neutral')]), OrderedDict([('Image_Name', '210.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', 'neutral')]), OrderedDict([('Image_Name', '372.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '362.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '41.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '50.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', 'neutral')]), OrderedDict([('Image_Name', '42.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '80.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', 'neutral')]), OrderedDict([('Image_Name', '20.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', 'neutral')]), OrderedDict([('Image_Name', '322.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '282.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '41.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '712.jpg'), ('Emotion', 'angry'), ('Correct_Answer', 'angry')]), OrderedDict([('Image_Name', '21.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '181.jpg'), ('Emotion', 'happy'), ('Correct_Answer', 'happy')]), OrderedDict([('Image_Name', '190.jpg'), ('Emotion', 'neutral'), ('Correct_Answer', 'neutral')])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="Actual3.xlsx" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="trials_6" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="AR3_Image"/>
+    <Routine name="AR3_W"/>
+    <LoopTerminator name="trials_6"/>
+    <LoopTerminator name="trials_10"/>
+    <LoopTerminator name="trials_7"/>
+    <Routine name="End_Instructions"/>
+  </Flow>
+</PsychoPy2experiment>
